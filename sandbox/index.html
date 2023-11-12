@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Java.js"></script>
+    <style>
+        .purple{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <p id="teksti" class="purple">Hello little shit</p>
+
+    <script>
+        'use strict';
+        // nyt tekstin muutos
+        const name = 'Pavel'
+        const element = document.querySelector('#teksti')
+        element.innerHTML = `Hello ${name}`
+        element.style.color = 'red';
+
+        console.log('moro mailmaa');
+        alert('Critical Fuck-up');
+
+        /* var nimi = prompt('Terve! Mikä on sun nimi?');
+        alert(`Moi ${nimi}!`)
+        alert('Your quest is to be funny')
+        let quest = prompt('Whats ur quest?')
+        if (quest == 'to be funny') {
+            alert('all right')
+        }
+        else{
+            alert('Vittu')
+        } */
+
+        // console.log(nimi)
+
+        // tämän takia strict ja const/let
+
+        let teacher = 'Ulla'
+        let surname;
+        surname = 'Sederelöf';
+        teacher = teacher + ' ' + surname;
+        console.log(teacher);
+
+        const taulukko = [0,1,2,3,4,5,6];
+        console.log(taulukko);
+
+        // ei onnistuu
+        // taulukko = [1,2,3,4,5,6,7]
+
+        // mutta
+        taulukko[0] = 1;
+        console.log(taulukko)
+
+        let nameAgain = 'Ulla'
+        console.log(typeof nameAgain, nameAgain);
+        nameAgain = 600;
+        console.log(typeof nameAgain, nameAgain);
+        nameAgain = nameAgain.toString()
+        console.log(typeof nameAgain, nameAgain);
+
+    </script>
+</body>
+</html>
