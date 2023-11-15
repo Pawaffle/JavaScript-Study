@@ -55,12 +55,27 @@
         taulukko[0] = 1;
         console.log(taulukko)
 
-        let nameAgain = 'Ulla'
+        /** let nameAgain = 'Ulla'
         console.log(typeof nameAgain, nameAgain);
         nameAgain = 600;
         console.log(typeof nameAgain, nameAgain);
         nameAgain = nameAgain.toString()
-        console.log(typeof nameAgain, nameAgain);
+        console.log(typeof nameAgain, nameAgain); */
+
+        let gameOver = false;
+        while(!gameOver) {
+            // Math.random() // return 0-0.9999999
+            // arvoraa silmaluku 1-6
+            const number = Math.floor(Math.random() * 6 + 1);
+            console.log('number', number)
+            if (number === 3) {
+                gameOver = true
+            }
+        }
+
+
+
+
 
     </script>
 </body>
