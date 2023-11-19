@@ -1,6 +1,6 @@
 // Probability to get sum 7 with 2 dice is 15.64%
 
-const qty = parseInt(prompt('Gimme-Gimme your number'));
+const qty = parseInt(prompt('Gimme-Gimme your number of dice'));
 let sum = parseInt(prompt('Gimme-Gimme your sum'));
 let prob = 0
 const loop = 10000
