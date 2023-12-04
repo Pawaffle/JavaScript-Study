@@ -14,7 +14,8 @@ function showData(objectData) {
     header2.innerText = data.name
 
     const seriesUrl = document.createElement('a')
-    seriesUrl.href = data.url + "_blank"
+    seriesUrl.href = data.url
+    seriesUrl.target = "_blank"
     seriesUrl.innerText = `Link to ${data.name} page on TVMaze`
 
     const poster = document.createElement('img')
@@ -26,7 +27,7 @@ function showData(objectData) {
 
     const article = document.createElement('article')
     article.classList.add('article')
-    article.append(header2, seriesUrl, poster, summary)
+    article.append(header2, poster, seriesUrl, summary)
     return article
 }
 
